@@ -1,0 +1,147 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Main container styles */
+.container {
+    background-color: #e6f7ff; /* Light blue background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 40px;
+    width: 320px; /* Fixed width */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: #333; /* Dark color for text */
+}
+
+.title p {
+    color: #777; /* Lighter color for subtitle */
+}
+
+/* Form container styles */
+.form-container {
+    margin-top: 20px;
+}
+
+/* Form title styles */
+.form-title {
+    font-size: 20px;
+    margin-bottom: 20px; /* Space below title */
+    color: #333; /* Dark color for title */
+    text-align: center; /* Center title */
+}
+
+/* Form group styles */
+.form-group {
+    position: relative;
+    margin-bottom: 20px; /* Reduced spacing for cleaner look */
+}
+
+/* Icon styles */
+.icon {
+    position: absolute;
+    left: 10px; /* Align icon inside input */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    color: #aaa; /* Light icon color */
+}
+
+/* Label styles */
+label {
+    position: absolute;
+    left: 40px; /* Adjusted for icon width */
+    top: 10px;
+    transition: 0.2s ease all; /* Smooth transition */
+    font-size: 14px;
+    color: #aaa; /* Light color for labels */
+}
+
+/* Input styles */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px 10px 10px 40px; /* Reduced padding for height adjustment */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    outline: none; /* Remove default outline */
+    background: transparent; /* Transparent background */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Focus styles for inputs */
+input:focus {
+    border-color: #007BFF; /* Change border color on focus */
+}
+
+/* Float label styles */
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px; /* Move label up */
+    left: 40px; /* Align label with input */
+    font-size: 12px; /* Smaller font size */
+    color: #007BFF; /* Color when focused */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #007BFF; /* Primary color */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove border */
+    padding: 12px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    width: 100%; /* Full width for the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Link styles */
+a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for better spacing */
+    text-align: left; /* Align the link to the left */
+    margin-top: 10px; /* Space above the link */
+    transition: color 0.3s ease, transform 0.2s ease; /* Transition for color and transform */
+}
+
+a:hover {
+    color: #0056b3; /* Darker link color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Add this to your existing login.css */
+
+/* Forgot Password link style */
+.forgot-password {
+    text-align: left; /* Align text to the left */
+    margin-top: 10px; /* Space above */
+    font-size: 14px; /* Font size */
+    color: #007BFF; /* Link color */
+}
